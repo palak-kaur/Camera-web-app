@@ -86,10 +86,6 @@ navigator.mediaDevices.getUserMedia(constraints).then(function (mediaStream) {
         let blob = new Blob(chunks, { type: "video/mp4" });
         chunks = [];
         addData("video", blob);
-        // let a = document.createElement("a");
-        // a.href = blobUrl;
-        // a.download = "temp.mp4";
-        // a.click();
     }
 })
 
@@ -149,7 +145,7 @@ showGallery.addEventListener("click", function (e) {
     modal.classList.add("modal");
     modal.innerHTML = `<div class="title">
                         <span style="margin-top: 10px; display: inline-block;">Gallery</span>
-                        <span class="close-modal" style="float: right; margin-top: 10px; margin-right: 20px; cursor: pointer;">X</span>
+                        <span class="close-modal" style="float: right; margin-top: 10px; margin-right: 20px; cursor: pointer;"><img src="https://img.icons8.com/emoji/48/000000/cross-mark-emoji.png"/></span>
                     </div>
                     <div class="gallery">
                     </div>`;
